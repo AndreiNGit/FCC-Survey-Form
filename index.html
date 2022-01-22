@@ -1,0 +1,90 @@
+<html>
+
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title"> What do you want to learn next? </h1>
+        <p id="description">We value your opinion so we can make improve our courses for you!</p>
+    </header>
+
+    <div id="content">
+        <div id="form-div">
+            <form id="survey-form">
+                <p>Every feedback can help us get better with each course we teach :)</p>
+                <div class="inputs">
+                    <div class="option">
+                        <label id="name-label" for="name">Name:</label><br>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="option">
+                        <label id="email-label" for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" placeholder="Enter your mail" required>
+                    </div>
+                    <div class="option">
+                        <label id="number-label" for="number">No. of attended courses:</label><br>
+                        <input type="number" id="number" name="number" min='1' max='10' placeholder="Enter your phone number">
+                    </div>
+                    <div class="option">
+                        <label for="dropdown">Choose a location:</label><br>
+                        <select id="dropdown">
+                            <option value="bucharest">Bucharest</option>
+                            <option value="cluj">Cluj</option>
+                            <option value="iasi">Iasi</option>
+                        </select>
+                    </div>
+                    <div class="option">
+                        <p>What is your level:</p>
+                        <div class="optionrdo">
+                            <input type="radio" id="beginner" name="level" value="beginner">
+                            <label for="beginner">Beginner</label>
+                        </div>
+        
+                        <div class="optionrdo">
+                            <input type="radio" id="medium" name="level" value="medium">
+                            <label for="medium">Medium</label>
+                        </div>
+                        <div class="optionrdo">
+                            <input type="radio" id="advanced" name="level" value="advanced">
+                            <label for="advanced">Advanced</label>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <p>What would you like to learn next:</p>
+                        <div class="optionchk">
+                            <input type="checkbox" id="html" name="study" value="html">
+                            <label for="html">HTML</label>
+                        </div>
+        
+                        <div class="optionchk">
+                            <input type="checkbox" id="css" name="study" value="css">
+                            <label for="css">CSS</label>
+                        </div>
+                        <div class="optionchk">
+                            <input type="checkbox" id="javascript" name="study" value="javascript">
+                            <label for="javascript">JavaScript</label>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <p>Do you have something to say?</p>
+                        <textarea placeholder="Enter aditional comments"></textarea>
+                    </div>
+                    
+                    <div class="option" id="submitdiv">
+                        <input type="submit" id="submit">
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p id="copy">Made with passion by Andrei Nicusor Andrei</p>
+    </footer>
+</body>
+
+</html>
